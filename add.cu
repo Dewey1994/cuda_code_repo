@@ -3,7 +3,7 @@
 //
 #include <math.h>
 #include <stdio.h>
-#include "error.cuh"
+#include "include/error.cuh"
 
 const double EPSLION = 1e-15;
 const double a = 1.23;
