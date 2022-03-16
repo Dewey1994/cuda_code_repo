@@ -22,7 +22,7 @@ void matrixMulCpuOneDim(const float *a, const float *b, float *c,int M,int N, in
     }
 }
 __global__ void matrixMul(const float *a, const float *b, float *c,int m,int n, int k)
-{
+{   // mxk * kxn
     int tx = blockDim.x*blockIdx.x+threadIdx.x;
     int ty = blockDim.y*blockIdx.y+threadIdx.y;
     if(ty<m && tx<n)
